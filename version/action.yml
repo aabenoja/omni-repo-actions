@@ -1,0 +1,16 @@
+# based on cycjimmy/semantic-release-action
+name: 'WTW Omni Repo - Versioning'
+description: 'Github Action for determining version bumps for .net core projects'
+author: 'aabenoja'
+branding:
+  icon: 'package'
+  color: 'orange'
+# inputs:
+otuputs:
+  is_main:
+    description: 'Indicates if the release is on the main channel or a branch channel'
+  version_list:
+    description: 'A JSON array of the projects that require a version bump'
+runs:
+  using: 'node12'
+  main: 'index.js'
